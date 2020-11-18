@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Abril+Fatface|Acme|Aldrich|Amatic+SC|Anton|Aref+Ruqaa|Audiowide|Bangers|Barlow+Semi+Condensed|Boogaloo|Cabin+Sketch|Cairo|Cinzel|Concert+One|El+Messiri|Fjalla+One|Fredoka+One|Fugaz+One|Gloria+Hallelujah|Handlee|Harmattan|Indie+Flower|Josefin+Sans|Josefin+Slab|Julius+Sans+One|Jura|Kalam|Kanit|Khand|Khula|Lalezar|Limelight|Lobster|Lora|Luckiest+Guy|Merienda|Monda|Monoton|Nunito|Nunito+Sans|Open+Sans+Condensed:300|Orbitron|Oswald|Pacifico|Passion+One|Patrick+Hand|Patua+One|Permanent+Marker|Playfair+Display|Playfair+Display+SC|Poiret+One|Poppins|Prompt|Quicksand|Rajdhani|Reem+Kufi|Righteous|Russo+One|Satisfy|Shadows+Into+Light|Shadows+Into+Light+Two|Shrikhand|Sigmar+One|Spectral+SC|Spirax|Ubuntu|Unica+One|Vollkorn+SC|Zilla+Slab+Highlight');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+}
+body {
+	background-image: url(../images/bg.jpg);
+	background-color: #1e2a35;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	min-width: 300px;
+	font-size: 16px;
+}
+.asterisk {
+	font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 14px;
+    color: #222931;
+}
+.fa-check {
+	margin-right: 4px;
+    margin-left: -5px;
+}
+.btn-info.active {
+	background-color: #333;
+    border-color: #101418;
+}
+/* Start Style Login */
+.body-login {
+	background-image: url(../images/animate.gif);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+    min-width: 300px;
+}
+.gradient {
+	/*background: linear-gradient(rgba(11, 1, 82, 0.8),rgba(57, 67, 255, 0.8));*/
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+.gradient table {
+	width: 100%;
+	min-height: calc(100vh - 50px);
+	padding: 10px;
+}
+.gradient table .container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 800px;
+}
+.gradient table .container .form {
+	float: none;
+	margin: auto;
+	background: #202b31;
+	width: 60%;
+	box-shadow: 0 0 20px #222;
+	color: #ec4a47;
+	padding: 30px;
+	display: none;
+}
+.gradient table .container .form form{
+	display: block;
+	padding: 20px 30px 45px 20px;
+}
+.gradient table .container .form form .hr-login {
+	    margin-bottom: 52px;
+}
+.gradient table .container .form form span{
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 25px;
+	font-family: 'Limelight', cursive;
+}
+.gradient table .container .form form input[type="text"],
+.gradient table .container .form form input[type="password"],
+.gradient table .container .form form input[type="submit"]{
+	display: block;
+	background-color: #20272f;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 30px 0 0 0;
+	height: 44px;
+	border-radius: 40px;
+	line-height: 30px;
+	padding: 7px 25px;
+	border: 1px solid #554641;
+	color: #a82c26;
+	width: 100%;
+}
+.gradient table .container .form form input[type="submit"]{
+	border: none;
+	line-height: 46px;
+	height: 46px;
+	margin-top: 45px;
+	padding: 0 25px;
+	background: #ec4a42;
+	color: #202b31;
+	cursor: pointer;
+}
+.gradient table .container .form form input[type="submit"]:hover,
+.gradient table .container .form form input[type="submit"]:focus{
+	background-color: #ea302d;
+	transition: all 0.5s ;
+}
+.h5, h5 {
+    font-size: 16px;
+    margin-top: 30px;
+}
+.gradient table .container .form a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #ec4a42;
+	font-weight: bold;
+}
+.gradient table .container .form a:hover{
+	color: #ea302d ;
+}
+.social {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.social a{
+	display: inline-block;
+	margin: 15px 20px 0 0;
+	text-decoration: none;
+}
+.social a img{
+	height: 16px;
+	width:  16px;
+}
+@media screen and (max-width: 840px){
+	.social {
+		max-width: 600px;
+	}
+}
+@media screen and (max-width: 640px){
+	.social {
+		max-width: 400px;
+		text-align: center;
+	}
+}
+h5 {
+	font-weight: bold;
+	margin-top: 35px; 
+}
+/* End Style Login 
+=============================================================================================
+Start Bootstrap Edit */
+
+.loading {
+	background-color: #131927;
+	color: #FFF;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 111;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  background-color: #FFF;
+
+  margin: 350px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.navbar {
+    border-radius: 0;
+    background-color: rgba(34, 40, 46, 0.1);
+}
+.navbar-brand {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.navbar-inverse {
+	border-color: rgba(8, 8, 8, 0.03);
+}
+.navbar-inverse .navbar-brand {
+	color: #e74c3c ;
+    background-color: #212830;
+    font-family: 'Limelight', cursive;
+}
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+	color: #ff1800;
+	transition: all ease-in-out .4s;
+}
+.dropdown-menu {
+	background-color: #c33c38;
+	font-size: 1em;
+	padding: 15px 0;
+	min-width: 170px;
+	border: none;
+}
+.dropdown-menu>li>a{
+	color: #FFF ;
+	padding: 8px 10px;
+	font-family: 'Limelight', cursive;
+}
+.dropdown-menu>li>a:hover {
+	background-color: #9d221e;
+	transition: all ease-in-out .5s;
+	color: #FFF;
+}
+.nav>li>a {
+	padding: 15px 12px ;
+}
+.navbar-inverse .navbar-nav>li .dropdown-toggle {
+	color: #FFF ;
+	background-color: #212931 /*#c33c38*/ ;
+	font-family: 'Limelight', cursive;
+}
+.navbar-inverse .navbar-nav>li .dropdown-toggle:focus,
+.navbar-inverse .navbar-nav>li .dropdown-toggle:hover {
+	background-color: #c33c38 ;
+}
+.navbar-nav>li>.dropdown-menu {
+	border-radius: 0 ;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+	background-color: #c33c38;
+	transition: all ease-in-out .4s;
+} 
+.form-control {
+	position: relative;
+}
+.btn-danger {
+	background-color: #c33c38;
+}
+/* ======== Forms in Members ======== */
+h1 {
+	font-size: 50px;
+	font-weight: bold;
+	margin: 30px;
+	color: #212830;
+}
+.form-group-lg .form-control {
+	margin-bottom: 20px;
+}
+.form-group {
+	color: #a56d53; 
+}
+.mem-users {
+	padding: 10px;
+}
+/* End Bootstrap Edit
+============================================================================================
+Start dashboard Style */
+.home-stats .stat {
+	border: none;
+	padding: 25px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.home-stats .stat .info {
+	float: right;
+}
+.home-stats .stat i {
+	position: absolute;
+	font-size: 80px;
+	top: 45px;
+	left: 30px;
+}
+.home-stats .stat span {
+	display: block;
+	font-size: 60px;
+}
+.home-stats .stat a {
+	color: #FFF;
+}
+.home-stats .stat a:hover {
+	text-decoration: none;
+}
+.home-stats .items {
+    background-color: #286090 !important;
+}
+.home-stats .members:hover ,
+.home-stats .pending:hover ,
+.home-stats .items:hover ,
+.home-stats .comments:hover {
+	opacity: 0.6;
+	transition: all ease-in-out 0.5s;
+}
+.letest {
+	margin-top: 20px;
+}
+.home-stats .members {
+	background-color: #e74c3c;
+}
+.home-stats .pending {
+	background-color: #2980b9;
+}
+.home-stats .items {
+	background-color: #e74c3c;
+}
+.home-stats .comments {
+	background-color: #27ae60;
+}
+.panel-default>.panel-heading {
+	color: #fff;
+    background-color: #e74c3c;
+}
+.letest .toggle-info:hover {
+	color: #444;
+	cursor: pointer;
+}
+.letest-users {
+	margin-bottom: 0;
+}
+.letest-users .fa-user,
+.letest-users .fa-tag {
+	font-size: 20px;
+    margin-right: 10px;
+    color: #2980b9;
+}
+.letest-users li {
+	padding: 10px;
+	overflow: hidden;
+	font-weight: bold;
+}
+.letest-users li:nth-child(even) {
+	background-color: #DDD;
+}
+.btn-info {
+	margin-right: 5px;
+}
+.panel {
+	border: none;
+}
+.letest .comment-box {
+	display: inline-block;
+}
+.letest .comment-box .member-n,
+.letest .comment-box .member-c {
+	display: inline-block;
+}
+.letest .comment-box .member-n {
+	width: 80px;
+	text-align: center;
+	position: relative;
+	top: 8px;
+}
+.letest .comment-box .member-c {
+	float: right;
+	width: calc(100% - 80px);
+	background-color: #ccc;
+	border-radius: 10px;
+	padding: 10px;
+	position: relative;
+}
+.letest .comment-box .member-c:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -28px;
+	top: 6px;
+	width: 0;
+	height: 0;
+	border: 15px solid;
+	border-color: transparent #ccc transparent transparent;
+}
+
+/* Start dashboard Style 
+======================================================================================================
+ Start Member page */
+.show-pass {
+	position: absolute;
+    top: 14px;
+    right: 50px;
+    font-size: 20px;
+}
+/* Manage Member */
+.main-table {
+	-webkit-box-shadow:2px 4px 15px #CCC;
+	-moz-box-shadow:2px 4px 15px #CCC;
+	box-shadow:2px 4px 15px #705f57;
+}
+.main-table td {
+	background-color: #FFF;
+	vertical-align: middle !important;
+}
+.main-table tr:first-child td {
+	background-color: #333;
+	color: #FFF;
+}
+.btn {
+	padding: 5px 10px;
+}
+.btn-info.active {
+	margin-left: 4px;
+}
+/* End Member page
+====================================================================================================
+Start Categories Page */
+.categories .cat h3 {
+	margin: 0 0 10px;
+}
+.categories .ordering a {
+	color: #c0392b;
+	text-decoration: none;
+}
+.categories .ordering .active {
+	color: #2c3e50;
+	font-weight: bold;
+}
+.categories .cat {
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.categories .cat:hover {
+	background-color: #DDD;
+}
+.categories .cat h3 {
+	margin: 0;
+	cursor: pointer;
+	font-weight: bold;
+}
+.categories .panel-heading {
+    color: #212830;
+    background-color: #e74c3c;
+    font-weight: bold;
+}
+.categories .cat .full-view {
+	display: none;
+}
+.categories .cat .full-view p {
+	margin: 15px 0;
+}
+.categories .cat .hidden-buttons {
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	position: absolute;
+	top: 15px;
+	right: -129px;
+	z-index: 5;
+}
+.categories .cat:hover .hidden-buttons {
+	right: 10px;
+}
+.categories .cat .hidden-buttons a {
+	margin-right: 5px;
+}
+/*.categories .cat:last-of-type ~ hr {
+	display: none;
+}*/
+.categories .cat .vis-cat,
+.categories .cat .com-cat,
+.categories .cat .ads-cat {
+    color: #FFF;
+    padding: 5px;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+.categories .cat .vis-cat {
+	background-color: #2980b9;
+}
+.categories .cat .com-cat {
+	background-color: #2c3e50;
+}
+.categories .cat .ads-cat {
+	background-color: #c0392b;
+}
+hr {
+ 	border-top: 1px solid #DDD;
+ 	margin-top: 0;
+ 	margin-bottom: 0;
+ }
+.categories .add-category {
+	margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 0;
+}
+.fa-plus {
+	padding-right: 5px;
+}
+/*==========================================================================================================*/
+/* End Categories Page */
+
